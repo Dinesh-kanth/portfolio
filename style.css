@@ -1,0 +1,2019 @@
+*{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 8rem;
+    font-family: 'inter', sans-serif;
+}
+footer{
+    background-color: grey;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+body{
+    margin: 0px;
+    background-color: black;
+    scroll-behavior: smooth;
+    scroll-padding: 8rem;
+    background-attachment: fixed;
+}
+.home{
+    background-color: black;
+    height: 774px;
+    background-attachment: fixed;
+}
+.r1{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    display: flex;
+    width: 1400px;
+    box-shadow: 2px 2px 20px goldenrod;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    border: 3px solid goldenrod;
+    border-radius: 40px;
+    transition: 1s;
+    animation: nav 2s linear;
+}
+@keyframes nav {
+    0%{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.r1c1 img{
+    padding: 1em;
+    height: 3em;
+    width: 8em;
+}
+.r1 .r1c2 a{
+    float: right;
+    text-align: center;
+    margin: 30px 50px;
+    font-size: 1.2em;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: 600;
+    color: goldenrod;
+}
+.r1 .r1c2 a:hover{
+    color: red;
+    border-bottom: 3px solid red;
+    overflow: hidden;
+}
+.r1 .r1c2 .che{
+    animation-name: t1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    overflow-y: hidden;
+    animation-duration: 2s;
+}
+@keyframes t1 {
+    25%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform: translateY(5px);
+    }
+}
+.r1 .r1c2 .cho{
+    animation-name: t2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    overflow-y: hidden;
+    animation-duration: 2s;
+}
+@keyframes t2 {
+    25%{
+        transform: translateY(5px);
+    }
+    75%{
+        transform: translateY(-5px);
+    }
+}
+.r2{
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    height: 80%;
+}
+.r2c1{
+    width: 60%;
+    margin: auto;
+    height: 65%;
+    animation: tleft 2s linear;
+    text-align: center;
+}
+@keyframes tleft {
+    0%{
+        transform: translateX(-600px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.r2c1 .p1{
+    font-size: 2em;
+    color: aliceblue;
+    margin-bottom: -50px;
+}
+.r2c1 .p2{
+    font-size: 3em;
+    font-family: "Sofia", sans-serif;
+    padding: 10px;
+    color: aliceblue;
+    margin-bottom: -50px;
+}
+.r2c1 .p3{
+    color: aliceblue;
+    font-size: 3em;
+}
+.r2c1 .p4{
+    color: aliceblue;
+    font-size: 1em;
+}
+.r2c1 a{
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+    box-shadow: 2px 2px 20px goldenrod;
+    transition: 1s;
+    background-color: goldenrod;
+}
+.r2c1 a:hover{
+    background-color: red;
+    box-shadow: 2px 2px 20px red;
+    border: 2px solid black;
+    color: white;
+}
+.r2c2{
+    margin: auto;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+}
+.r2c2 img{
+    margin-top: 90px;
+    border-radius: 50%;
+    height: 18em;
+    width: 16em;
+    box-shadow: 3px 3px 50px goldenrod;
+    transition: 2s;
+    border: 2px solid black;
+    animation: travel 5s linear infinite, tright 2s ease;
+}
+@keyframes tright {
+    0%{
+        transform: translateX(600px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes travel {
+    0%{
+        border-radius: 30% 50% 90% 60%;
+    }
+    20%{
+        border-radius: 60% 40% 80% 20%;
+    }
+    40%{
+        border-radius: 80% 30% 50% 40%;
+    }
+    60%{
+        border-radius: 50% 90% 80% 30%;
+    }
+    80%{
+        border-radius: 40% 30% 80% 50%;
+    }
+    100%{
+        border-radius: 30% 50% 90% 60%;
+    }
+}
+.board{
+    margin: 100px 150px;
+    text-align: center;
+    border-radius: 30px;
+    animation: boxanim 2s linear;
+}
+@keyframes boxanim {
+    0%{
+        transform: translateY(-600px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.board h2{
+    font-size: 3em;
+    color: white;
+}
+.board .rp1{
+    color: white;
+    font-size: 1.3em;
+    animation: abouttrans 3s ease-in;
+}
+.board .rp2{
+    font-size: 1.3em;
+    animation: abouttrans 3s ease-in;
+    color: white;
+}
+.board .rp3{
+    font-size: 1.3em;
+    animation: abouttrans 3s ease-in;
+    color: white;
+}
+@keyframes abouttrans {
+    0%{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.skillset{
+    margin: 100px 50px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 30px 0px;
+}
+.skillset p{
+    font-size: 3em;
+    color: white;
+}
+.set-1{
+    padding-top: 35px;
+    height: 120px;
+}.set-2{
+    padding-top: 35px;
+    height: 120px;
+}.set-3{
+    padding-top: 35px;
+    height: 120px;
+}
+.skills .i1{
+    box-shadow: 2px 2px 20px goldenrod;
+    height: 4em;
+    margin: 0px 40px;
+    background-color: aliceblue;
+    width: 4em;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+.skills .i2{
+    height: 4em;
+    padding: 10px;
+    background-color: aliceblue;
+    margin: 0px 40px;
+    width: 4em;
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px goldenrod;
+    border: 2px solid black;
+}.skills .i3{
+    height: 4em;
+    padding: 10px;
+    box-shadow: 2px 2px 20px goldenrod;
+    margin: 0px 40px;
+    background-color: aliceblue;
+    width: 4em;
+    border-radius: 30px;
+    border: 2px solid black;
+}.skills .i4{
+    border-radius: 30px;
+    margin: 0px 40px;
+    box-shadow: 2px 2px 20px goldenrod;
+    height: 4em;
+    background-color: aliceblue;
+    padding: 10px;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i5{
+    height: 4em;
+    padding: 10px;
+    margin: 0px 30px;
+    box-shadow: 2px 2px 20px goldenrod;
+    border-radius: 30px;
+    background-color: aliceblue;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i6{
+    height: 4em;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 20px goldenrod;
+    border-radius: 30px;
+    margin: 0px 30px;
+    padding: 10px;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i7{
+    background-color: aliceblue;
+    border-radius: 30px;
+    height: 4em;
+    box-shadow: 2px 2px 20px goldenrod;
+    margin: 0px 30px;
+    padding: 10px;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i8{
+    background-color: aliceblue;
+    height: 4em;
+    padding: 10px;
+    margin: 0px 30px;
+    box-shadow: 2px 2px 20px goldenrod;
+    width: 4em;
+    border-radius: 30px;
+    border: 2px solid black;
+}.skills .i9{
+    height: 4em;
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px goldenrod;
+    padding: 10px;
+    margin: 0px 40px;
+    background-color: aliceblue;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i10{
+    height: 4em;
+    border-radius: 30px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 20px goldenrod;
+    margin: 0px 30px;
+    padding: 10px;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i11{
+    padding: 10px;
+    border-radius: 30px;
+    margin: 0px 40px;
+    box-shadow: 2px 2px 20px goldenrod;
+    background-color: aliceblue;
+    height: 4em;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i12{
+    height: 4em;
+    box-shadow: 2px 2px 20px goldenrod;
+    margin: 0px 40px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    padding: 10px;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i13{
+    height: 4em;
+    box-shadow: 2px 2px 20px goldenrod;
+    padding: 10px;
+    margin: 0px 30px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    width: 4em;
+    border: 2px solid black;
+}.skills .i14{
+    padding: 10px;
+    height: 4em;
+    box-shadow: 2px 2px 20px goldenrod;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin: 0px 40px;
+    width: 4em;
+    border: 2px solid black;
+}
+.skillset .skills .che{
+    animation-name: t11;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    overflow-y: hidden;
+    animation-duration: 4s;
+}
+.skillset .skills .cho{
+    animation-name: t21;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    overflow-y: hidden;
+    animation-duration: 4s;
+}
+.skills .i1:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i2:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i3:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i4:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i5:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i6:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i7:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i8:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i9:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i10:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i11:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i12:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i13:hover{
+    box-shadow: 3px 3px 20px red;
+}.skills .i14:hover{
+    box-shadow: 3px 3px 20px red;
+}
+@keyframes t11 {
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+@keyframes t21 {
+    0%{
+        transform: translateX(10px);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+.heading{
+    font-size: 3em;
+    cursor: pointer;
+    text-align: center;
+    animation: glow 6s ease-in-out infinite;
+}
+@keyframes glow {
+    0%{
+        color: white;
+        text-shadow: 2px 2px 20px red;
+    }
+    20%{
+        color: goldenrod;
+        text-shadow: 2px 2px 20px white;
+    }
+    40%{
+        color: goldenrod;
+        text-shadow: 2px 2px 20px red;
+    }
+    60%{
+        color: red;
+        text-shadow: 2px 2px 20px goldenrod;
+    }
+    80%{
+        color: red;
+        text-shadow: 2px 2px 20px white;
+    }
+    100%{
+        color: white;
+        text-shadow: 2px 2px 20px red;
+    }
+}
+.projects{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.projects .card-row1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.card1{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 50px 50px;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px white;
+    cursor: pointer;
+    border: 3px solid goldenrod;
+}
+.content .title{
+    font-size: 1.2em;
+}
+.content a{
+    text-decoration: none;
+    background-color: goldenrod;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.3em;
+    transition: 2s;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 20px goldenrod;
+}
+.content a:hover{
+    background-color: red;
+    box-shadow: 2px 2px 20px red;
+    border-color: white;
+    color: white;
+}
+.card-image{
+    margin-top: 20px;
+}
+.card-image img{
+    width: 80%;
+    border-radius: 10px;
+    height: 80%;
+}
+.card1:hover{
+    box-shadow: 2px 2px 20px goldenrod;
+    border-color: white;
+    height: 430px;
+}
+.card1 .content{
+    transform: translateY(-420px);
+    opacity: 0;
+    color: white;
+    height: 400px;
+}
+.card1:hover > .card-image{
+    transform: translateY(-420px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+.card1:hover > .content{
+    opacity: 1;
+    transform: translateY(-170px);
+    transition-timing-function: linear;
+    transition: 0.5s;
+}
+.projects .card-row2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.card2{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 50px 50px;
+    box-shadow: 2px 2px 20px white;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    border: 3px solid goldenrod;
+}
+.card2 .content{
+    transform: translateY(-420px);
+    opacity: 0;
+    height: 350px;
+    color: white;
+}
+.card2:hover > .card-image{
+    transform: translateY(-420px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+.card2:hover{
+    height: 380px;
+    box-shadow: 2px 2px 20px goldenrod;
+    border-color: white;
+}
+.card2:hover > .content{
+    opacity: 1;
+    transform: translateY(-170px);
+    transition-timing-function: linear;
+    transition: 0.5s;
+}
+.education{
+    text-align: center;
+    justify-content: center;
+}
+.education p{
+    color: white;
+}
+.table .degree{
+    margin: 30px 500px;
+    padding: 10px;
+    border: 3px solid white;
+    cursor: pointer;
+    animation: transfer1 8s infinite linear both;
+}
+@keyframes transfer1 {
+    0%{
+        transform: translateX(-300px);
+    }
+    25%{
+        transform: translateX(-200px);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    75%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(-300px);
+    }
+}
+.table .inter{
+    margin: 30px 500px;
+    padding: 10px;
+    animation: transfer2 8s infinite linear both;
+    cursor: pointer;
+    border: 3px solid white;
+}
+@keyframes transfer2 {
+    0%{
+        transform: translateX(300px);
+    }
+    25%{
+        transform: translateX(200px);
+    }
+    50%{
+        transform: translateX(-200px);
+    }
+    75%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
+.table .school{
+    margin: 30px 500px;
+    padding: 10px;
+    cursor: pointer;
+    animation: transfer3 8s infinite linear both;
+    border: 3px solid white;
+}
+@keyframes transfer3 {
+    0%{
+        transform: translateX(-300px);
+    }
+    25%{
+        transform: translateX(-200px);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    75%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(-300px);
+    }
+}
+.contact{
+    text-align: center;
+    justify-content: center;
+}
+.circleimg{
+    overflow: hidden;
+    height: 84vh;
+}
+.contact img{
+    height: 6em;
+    width: 6em;
+}
+.circleimg .im1{
+    height: 5em;
+    transform: translate(102px, 80px);
+}
+.circleimg .im2{
+    transform: translate(236px,-50px);
+}
+.circleimg .im3{
+    transform: translate(380px,80px);
+}
+.circleimg .im4{
+    height: 5em;
+    width: 5em;
+    transform: translate(-370px,320px);
+}
+.circleimg .im5{
+    transform: translate(-240px,450px);
+}
+.circleimg .im6{
+    transform: translate(-94px,320px);
+    height: 5em;
+    width: 5em;
+}
+.circleimg .im1:hover{
+    filter: drop-shadow(2px 2px 10px #ffffff);
+}
+.circleimg .im2:hover{
+    filter: drop-shadow(2px 2px 10px #f27d3e);
+}
+.circleimg .im3:hover{
+    filter: drop-shadow(4px 4px 20px #1a91e7);
+}
+.circleimg .im4:hover{
+    filter: drop-shadow(2px 2px 10px #1964de);
+}
+.circleimg .im5:hover{
+    filter: drop-shadow(2px 2px 10px #2ebe03);
+}
+.circleimg .im6:hover{
+    filter: drop-shadow(2px 2px 10px #ffffff);
+}
+.circleimg .center{
+    clip-path: circle();
+    height: 10em;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 10em;
+    transform: translate(0px,220px);
+}
+.fa-bars{
+    color: goldenrod;
+    cursor: pointer;
+    overflow: hidden;
+}
+.mobile-nav{
+    display: block;
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-height: 100vh;
+    z-index: 98;
+    padding-top: 190px;
+    transition: 0.5s;
+}
+.mobile-nav a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 40%;
+    min-width: 200px;
+    margin: 0 auto 16px;
+    padding: 12px 16px;
+    border: 3px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px white;
+    background-color: transparent;
+    color: white;
+}
+.mobile-nav a:hover{
+    color: black;
+    background-color: goldenrod;
+    border: 3px solid black;
+    box-shadow: 2px 2px 20px goldenrod;
+}
+.fa-xmark{
+    color: white;
+    float: right;
+    cursor: pointer;
+    text-shadow: 2px 2px 20px red;
+    padding: 130px 30px 30px 30px;
+    overflow: hidden;
+    font-size: 2em;
+}
+.fa-xmark:hover{
+    color: red;
+    text-shadow: 2px 2px 20px white;
+    transform: rotate(360deg);
+}
+@media all and (min-width: 1261px) {
+    .card2 .content{
+        height: 420px;
+    }
+    .card2:hover{
+        height: 420px;
+    }
+    .table .degree{
+        animation: Rtransfer1 8s infinite linear both;
+        margin: 10px 500px;
+    }
+    .table .school{
+        animation: Rtransfer1 8s infinite linear both;
+        margin: 10px 500px;
+    }
+    @keyframes Rtransfer1 {
+        0%{
+            transform: translateX(-500px);
+        }
+        25%{
+            transform: translateX(-400px);
+        }
+        50%{
+            transform: translateX(400px);
+        }
+        75%{
+            transform: translateX(500px);
+        }
+        100%{
+            transform: translateX(-500px);
+        }
+    }
+    .table .inter{
+        animation: Rtransfer2 8s infinite linear both;
+        margin: 10px 500px;
+    }
+    @keyframes Rtransfer2 {
+        0%{
+            transform: translateX(500px);
+        }
+        25%{
+            transform: translateX(400px);
+        }
+        50%{
+            transform: translateX(-400px);
+        }
+        75%{
+            transform: translateX(-500px);
+        }
+        100%{
+            transform: translateX(500px);
+        }
+    }
+    .r1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    .r1 .r1c2 a{
+        float: right;
+        text-align: center;
+        margin: 30px 50px;
+    }
+    .r1c1 img{
+        margin-top: 5px;
+        padding: 1em;
+        height: 3em;
+        width: 8em;
+    }
+    .ham{
+        margin-top: -500px;
+    }
+    .fa-xmark{
+        margin-top: -500px;
+    }
+}
+@media all and (min-width: 1050px) and (max-width: 1260px) {
+    .table .degree{
+        animation: Rtransfer1 8s infinite linear both;
+        margin: 10px 300px;
+    }
+    .table .school{
+        animation: Rtransfer1 8s infinite linear both;
+        margin: 10px 300px;
+    }
+    @keyframes Rtransfer1 {
+        0%{
+            transform: translateX(-500px);
+        }
+        25%{
+            transform: translateX(-400px);
+        }
+        50%{
+            transform: translateX(400px);
+        }
+        75%{
+            transform: translateX(500px);
+        }
+        100%{
+            transform: translateX(-500px);
+        }
+    }
+    .table .inter{
+        animation: Rtransfer2 8s infinite linear both;
+        margin: 10px 500px;
+    }
+    @keyframes Rtransfer2 {
+        0%{
+            transform: translateX(500px);
+        }
+        25%{
+            transform: translateX(400px);
+        }
+        50%{
+            transform: translateX(-400px);
+        }
+        75%{
+            transform: translateX(-500px);
+        }
+        100%{
+            transform: translateX(500px);
+        }
+    }
+    .ham{
+        margin-top: -500px;
+    }
+}
+@media all and (min-width: 741px) and (max-width: 752px) {
+    #appear{
+        margin-top: -300px;
+    }
+    .ham{
+        margin-top: 10px;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 1260px) {
+    .r2{
+        height: 78%;
+        display: flex;
+        overflow: hidden;
+        margin-top: 140px;
+    }
+    .r2c1{
+        width: 90%;
+        height: 80%;
+        margin-top: 100px;
+    }
+    .r2c1 .p1{
+        font-size: 1.2em;
+    }
+    .r2c1 .p2{
+        font-size: 2em;
+        margin-top: 60px;
+    }
+    .home{
+        height: 650px;
+    }
+    .r2c1 .p3{
+        margin-top: 40px;
+        font-size: 1.5em;
+    }
+    .r2c2{
+        margin-top: 80px;
+        width: 80%;
+        height: 100%;
+    }
+    .r2c2 img{
+        margin-top: 40px;
+        height: 14em;
+        width: 12em;
+    }
+    .board{
+        margin: 10px 30px;
+    }
+    .board .rp1{
+        font-size: 1.1em;
+    }
+    .board .rp2{
+        font-size: 1.1em;
+    }
+    .board .rp3{
+        font-size: 1.1em;
+    }
+    .skillset{
+        margin: 10px 0px;
+        padding: 10px 0px;
+    }
+    .set-1{
+        padding-top: 25px;
+    }.set-2{
+        padding-top: 25px;
+    }.set-3{
+        padding-top: 25px;
+    }
+    .skills .i1{
+        height: 3em;
+        width: 3em;
+        margin: 0px 20px;
+        border-radius: 25px;
+        padding: 10px;
+    }
+    .skills .i2{
+        height: 3em;
+        border-radius: 25px;
+        width: 3em;
+        margin: 0px 20px;
+        padding: 10px;
+    }
+    .skills .i3{
+        height: 3em;
+        border-radius: 25px;
+        width: 3em;
+        margin: 0px 20px;
+        padding: 10px;
+    }
+    .skills .i4{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 20px;
+        padding: 10px;
+    }
+    .skills .i5{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 10px;
+        padding: 10px;
+    }
+    .skills .i6{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 10px;
+        padding: 10px;
+    }
+    .skills .i7{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 10px;
+        padding: 10px;
+    }
+    .skills .i8{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 10px;
+        padding: 10px;
+    }
+    .skills .i9{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 20px;
+        padding: 10px;
+    }
+    .skills .i10{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 10px;
+        padding: 10px;
+    }
+    .skills .i11{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 20px;
+        padding: 10px;
+    }
+    .skills .i12{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 20px;
+        padding: 10px;
+    }
+    .skills .i13{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 10px;
+        padding: 10px;
+    }
+    .skills .i14{
+        height: 3em;
+        width: 3em;
+        border-radius: 25px;
+        margin: 0px 20px;
+        padding: 10px;
+    }
+    .table .degree{
+        animation: Rtransfer1 5s infinite linear both;
+        margin: 10px 200px;
+    }
+    .table .school{
+        animation: Rtransfer1 5s infinite linear both;
+        margin: 10px 200px;
+    }
+    @keyframes Rtransfer1 {
+        0%{
+            transform: translateX(-50px);
+        }
+        25%{
+            transform: translateX(-10px);
+        }
+        50%{
+            transform: translateX(0px);
+        }
+        75%{
+            transform: translateX(50px);
+        }
+        100%{
+            transform: translateX(-50px);
+        }
+    }
+    .table .inter{
+        animation: Rtransfer2 5s infinite linear both;
+        margin: 10px 200px;
+    }
+    @keyframes Rtransfer2 {
+        0%{
+            transform: translateX(50px);
+        }
+        25%{
+            transform: translateX(10px);
+        }
+        50%{
+            transform: translateX(0px);
+        }
+        75%{
+            transform: translateX(-50px);
+        }
+        100%{
+            transform: translateX(50px);
+        }
+    }
+    .card2{
+        margin: 20px 20px;
+        height: 200px;
+    }
+    .card2:hover{
+        height: 450px;
+    }
+    .card2:hover > .content{
+        margin-top: 30px;
+    }
+    .card2 .content{
+        height: 450px;
+    }
+    .card1:hover{
+        height: 420px;
+    }
+    .card1 .content{
+        height: 400px;
+    }
+    .content p{
+        font-size: 1em;
+    }
+    .content .title{
+        font-size: 1.2em;
+    }
+    .content a{
+        font-size: 0.9em;
+    }
+    .r1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    .r1 .r1c2 a{
+        float: right;
+        text-align: center;
+        margin: 30px 30px;
+    }
+    .r1c1{
+        width: 14%;
+        overflow: hidden;
+        height: 100%;
+    }
+    .r1c1 img{
+        margin-top: 10px;
+        padding: 1em;
+        height: 2.3em;
+        width: 6em;
+    }
+    .ham{
+        margin-top: -500px;
+    }
+}
+@media all and (min-width: 767px) and (max-width: 860px) {
+    .r1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    .r1 .r1c2 a{
+        float: right;
+        text-align: center;
+        margin: 30px 20px;
+    }
+    .r1c1{
+        width: 14%;
+    }
+    .r1c2{
+        height: 100%;
+        overflow: hidden;
+    }
+    .r1c1 img{
+        margin-top: 10px;
+        padding: 1em;
+        height: 2.3em;
+        width: 6em;
+    }
+}
+@media all and (min-width: 741px) and (max-width: 769px) {
+    .r1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    .r1c1{
+        width: 150%;
+    }
+    .r1c1 img{
+        height: 2em;
+        width: 5em;
+    }
+    #appear{
+        margin-top: -310px;
+    }
+    .ham{
+        margin-top: 0px;
+        margin-left: 260px;
+        font-size: 1.4em;
+    }
+} 
+@media all and (min-width: 701px) and (max-width: 741px) {
+    #appear{
+        margin-top: -310px;
+    }
+    .ham{
+        margin-top: 0px;
+        margin-left: 260px;
+        font-size: 1.4em;
+    }
+}
+@media all and (min-width: 658px) and (max-width: 701px) {
+    #appear{
+        margin-top: -390px;
+    }
+    .ham{
+        margin-top: 0px;
+        margin-left: 260px;
+        font-size: 1.4em;
+    }
+}
+@media all and (min-width: 658px) and (max-width: 741px) {
+    .r1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    .r1c1{
+        width: 150%;
+        height: 100%;
+    }
+    .r1c1 img{
+        height: 2em;
+        width: 5em;
+    }
+}
+@media all and (min-width: 658px) and (max-width: 768px) {
+    .card1{
+        margin: 50px 200px;
+    }
+    .card2{
+        margin: 50px 200px;
+    }
+    .projects .card-row2{
+        margin-top: -50px;
+    }
+}
+@media all and (min-width: 550px) and (max-width: 659px) {
+    .r1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    .r1c1{
+        width: 150%;
+    }
+    .r1c1 img{
+        height: 2em;
+        width: 5em;
+    }
+    .card1{
+        margin: 50px 150px;
+    }
+    .card2{
+        margin: 50px 150px;
+    }
+    .projects .card-row2{
+        margin-top: -50px;
+    }
+}
+@media all and (min-width: 572px) and (max-width:659px){
+    #appear{
+        margin-top: -390px;
+    }
+    .ham{
+        margin-top: -5px;
+        margin-left: 220px;
+        font-size: 1.4em;
+    }
+}
+@media all and (min-width: 550px) and (max-width: 573px) {
+    #appear{
+        margin-top: -470px;
+    }
+    .ham{
+        margin-top: -5px;
+        margin-left: 220px;
+        font-size: 1.4em;
+    }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+    .r2{
+        height: 78%;
+        display: inline-block;
+        overflow: hidden;
+        margin-top: 160px;
+    }
+    .r2c1{
+        width: 90%;
+        height: 70%;
+    }
+    .r2c1 .p1{
+        font-size: 1.5em;
+    }
+    .r2c1 .p2{
+        margin-top: 40px;
+        font-size: 2em;
+    }
+    .r2c1 .p3{
+        font-size: 1.2em;
+    }
+    .r2c2{
+        margin-top: -120px;
+        width: 80%;
+        height: 100%;
+    }
+    .r2c2 img{
+        margin-top: 40px;
+        height: 14em;
+        width: 12em;
+    }
+    .board{
+        margin: 10px 30px;
+    }
+    .board .rp1{
+        font-size: 1.1em;
+    }
+    .board .rp2{
+        font-size: 1.1em;
+    }
+    .board .rp3{
+        font-size: 1.1em;
+    }
+    .skillset{
+        margin: 10px 0px;
+        padding: 10px 0px;
+    }
+    .set-1{
+        margin-top: 30px;
+    }.set-2{
+        margin-top: -20px;
+    }.set-3{
+        margin-top: -20px;
+    }
+    .skills .i1{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    .skills .i2{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    .skills .i3{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i4{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i5{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i6{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i7{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i8{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i9{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i10{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i11{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i12{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i13{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }.skills .i14{
+        height: 2.5em;
+        width: 2.5em;
+        margin: 0px 10px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    .projects .card-row1{
+        display: inline-block;
+    }
+    .projects .card-row2{
+        display: inline-block;
+    }
+    .table .degree{
+        animation: Rtransfer1 5s infinite linear both;
+        margin: 10px 50px;
+    }
+    .table .school{
+        animation: Rtransfer1 5s infinite linear both;
+        margin: 10px 50px;
+    }
+    @keyframes Rtransfer1 {
+        0%{
+            transform: translateX(-50px);
+        }
+        25%{
+            transform: translateX(-10px);
+        }
+        50%{
+            transform: translateX(0px);
+        }
+        75%{
+            transform: translateX(50px);
+        }
+        100%{
+            transform: translateX(-50px);
+        }
+    }
+    .table .inter{
+        animation: Rtransfer2 5s infinite linear both;
+        margin: 10px 50px;
+    }
+    @keyframes Rtransfer2 {
+        0%{
+            transform: translateX(50px);
+        }
+        25%{
+            transform: translateX(10px);
+        }
+        50%{
+            transform: translateX(0px);
+        }
+        75%{
+            transform: translateX(-50px);
+        }
+        100%{
+            transform: translateX(50px);
+        }
+    }
+    .contact{
+        height: 90%;
+        overflow: hidden;
+    }
+    .contact img{
+        height: 4em;
+        width: 4em;
+    }
+    .circleimg .center{
+        height: 6.5em;
+        padding: 5px;
+        width: 6.5em;
+        transform: translate(-20px,200px);
+    }
+    .circleimg .im1{
+        height: 3em;
+        transform: translate(70px, 100px);
+    }
+    .circleimg .im2{
+        transform: translate(140px,0px);
+    }
+    .circleimg .im3{
+        transform: translate(220px,110px);
+    }
+    .circleimg .im4{
+        height: 3em;
+        width: 3em;
+        transform: translate(-250px,250px);
+    }
+    .circleimg .im5{
+        transform: translate(-160px,350px);
+    }
+    .circleimg .im6{
+        transform: translate(-80px,250px);
+        height: 3em;
+        width: 3em;
+    }
+}
+@media all and (min-width: 487px) and (max-width:495px) {
+    .circleimg .im6{
+        transform: translate(170px,200px);
+        height: 3em;
+        width: 3em;
+    }
+}
+@media all and (min-width: 481px) and (max-width: 550px) {
+    .r1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    .r1c1{
+        width: 150%;
+    }
+    .r1c1 img{
+        height: 2em;
+        width: 5em;
+    }
+    .card1{
+        margin: 50px 100px;
+    }
+    .card2{
+        margin: 50px 100px;
+    }
+    .projects .card-row2{
+        margin-top: -50px;
+    }
+    #appear{
+        margin-top: -470px;
+    }
+    .ham{
+        margin-top: -5px;
+        margin-left: 210px;
+        font-size: 1.4em;
+    }
+}
+@media all and (min-width: 364px) and (max-width: 480px) {
+    .r2c2{
+        margin-top: -200px;
+    }
+    .r2c1 .p2{
+        font-size: 2em;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 364px) {
+    .r2c2{
+        margin-top: -200px;
+    }
+    .r2c1 .p2{
+        font-size: 1.5em;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+    .r2{
+        height: 76%;
+        display: inline-block;
+        overflow: hidden;
+        margin-top: 180px;
+    }
+    .r2c1{
+        width: 90%;
+        height: 80%;
+    }
+    .r2c1 .p1{
+        font-size: 1.1em;
+    }
+    .r2c1 .p2{
+        margin-top: 60px;
+    }
+    .r2c1 .p3{
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+    .r2c1 .p4{
+        font-size: 0.8em;
+    }
+    .r2c2{
+        width: 80%;
+        overflow: hidden;
+        height: 100%;
+    }
+    .r2c2 img{
+        margin-top: 80px;
+        margin-bottom: 30px;
+        height: 12em;
+        width: 10em;
+    }
+    .board{
+        margin: 10px 20px;
+    }
+    .board .rp1{
+        font-size: 0.8em;
+    }
+    .board .rp2{
+        font-size: 0.8em;
+    }
+    .board .rp3{
+        font-size: 0.8em;
+    }
+    .skillset{
+        margin: 4px 0px;
+        padding: 5px 0px;
+    }
+    .set-1{
+        margin-top: 0px;
+    }.set-2{
+        margin-top: -80px;
+    }.set-3{
+        margin-top: -80px;
+    }
+    .skills .i1{
+        height: 1.3em;
+        width: 1.3em;
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .skills .i2{
+        height: 1.3em;
+        width: 1.3em;
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .skills .i3{
+        height: 1.3em;
+        width: 1.3em;
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i4{
+        height: 1.3em;
+        width: 1.3em;
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i5{
+        height: 1.2em;
+        width: 1.2em;
+        margin: 0px 5px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i6{
+        height: 1.2em;
+        width: 1.2em;
+        margin: 0px 5px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i7{
+        height: 1.2em;
+        width: 1.2em;
+        margin: 0px 5px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i8{
+        height: 1.2em;
+        width: 1.2em;
+        margin: 0px 5px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i9{
+        height: 1.3em;
+        width: 1.3em;
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i10{
+        height: 1.2em;
+        width: 1.2em;
+        margin: 0px 5px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i11{
+        height: 1.3em;
+        width: 1.3em;
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i12{
+        height: 1.3em;
+        width: 1.3em;
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i13{
+        height: 1.2em;
+        width: 1.2em;
+        margin: 0px 5px;
+        border-radius: 5px;
+        padding: 5px;
+    }.skills .i14{
+        height: 1.3em;
+        width: 1.3em;
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .projects .card-row1{
+        margin-top: -50px;
+        width: 100%;
+        display: inline-block;
+    }
+    .projects .card-row2{
+        display: inline-block;
+        margin-top: -50px;
+    }
+    .table .degree{
+        animation: Rtransfer1 5s infinite linear both;
+        margin: 10px 20px;
+    }
+    .table .school{
+        animation: Rtransfer1 5s infinite linear both;
+        margin: 10px 20px;
+    }
+    @keyframes Rtransfer1 {
+        0%{
+            transform: translateX(-50px);
+        }
+        25%{
+            transform: translateX(-10px);
+        }
+        50%{
+            transform: translateX(0px);
+        }
+        75%{
+            transform: translateX(50px);
+        }
+        100%{
+            transform: translateX(-50px);
+        }
+    }
+    .table .inter{
+        animation: Rtransfer2 5s infinite linear both;
+        margin: 10px 20px;
+    }
+    @keyframes Rtransfer2 {
+        0%{
+            transform: translateX(50px);
+        }
+        25%{
+            transform: translateX(10px);
+        }
+        50%{
+            transform: translateX(0px);
+        }
+        75%{
+            transform: translateX(-50px);
+        }
+        100%{
+            transform: translateX(50px);
+        }
+    }
+    .r1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    .r1c1{
+        width: 150%;
+    }
+    .r1c1 img{
+        height: 2em;
+        width: 5em;
+    }
+    #appear{
+        margin-top: -470px;
+    }
+    .ham{
+        margin-top: -8px;
+        margin-left: 160px;
+        font-size: 1.4em;
+    }
+}
+@media all and (min-width: 400px) and (max-width: 480px) {
+    .card1{
+        margin: 50px 70px;
+    }
+    .card2{
+        margin: 50px 70px;
+    }
+    .projects .card-row2{
+        margin-top: -50px;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 399px) {
+    .card1{
+        margin: 50px 10px;
+    }
+    .card2{
+        margin: 50px 10px;
+    }
+    .projects .card-row2{
+        margin-top: -50px;
+    }
+    
+}
+@media all and (min-width: 435px) and (max-width: 487px) {
+    .contact img{
+        height: 4em;
+        width: 4em;
+    }
+    .circleimg .center{
+        height: 6em;
+        padding: 5px;
+        width: 6em;
+        transform: translate(-30px,200px);
+    }
+    .circleimg .im1{
+        height: 3em;
+        transform: translate(20px, 100px);
+    }
+    .circleimg .im2{
+        transform: translate(130px,0px);
+    }
+    .circleimg .im3{
+        transform: translate(230px,110px);
+    }
+    .circleimg .im4{
+        height: 3em;
+        width: 3em;
+        transform: translate(-280px,250px);
+    }
+    .circleimg .im5{
+        transform: translate(-170px,350px);
+    }
+    .circleimg .im6{
+        transform: translate(180px,200px);
+        height: 3em;
+        width: 3em;
+    }
+}
+@media all and (min-width: 367px) and (max-width:435px) {
+    .contact img{
+        height: 4em;
+        width: 4em;
+    }
+    .circleimg .center{
+        height: 6em;
+        padding: 5px;
+        width: 6em;
+        transform: translate(-70px,200px);
+    }
+    .circleimg .im1{
+        height: 3em;
+        transform: translate(20px, 100px);
+    }
+    .circleimg .im2{
+        transform: translate(90px,0px);
+    }
+    .circleimg .im3{
+        transform: translate(150px,110px);
+    }
+    .circleimg .im4{
+        height: 3em;
+        width: 3em;
+        transform: translate(-290px,250px);
+    }
+    .circleimg .im5{
+        transform: translate(20px,290px);
+    }
+    .circleimg .im6{
+        transform: translate(100px,180px);
+        height: 3em;
+        width: 3em;
+    }
+}
+@media all and (min-width: 322px) and (max-width:367px) {
+    .contact img{
+        height: 3em;
+        width: 3em;
+    }
+    .circleimg .center{
+        height: 5em;
+        padding: 5px;
+        width: 5em;
+        transform: translate(-60px,200px);
+    }
+    .circleimg .im1{
+        height: 2.4em;
+        transform: translate(10px, 100px);
+    }
+    .circleimg .im2{
+        transform: translate(90px,0px);
+    }
+    .circleimg .im3{
+        transform: translate(140px,115px);
+        font-size: 1.4em;
+    }
+    .circleimg .im4{
+        height: 3em;
+        width: 3em;
+        transform: translate(-260px,250px);
+    }
+    .circleimg .im5{
+        height: 4em;
+        width: 4em;
+        transform: translate(20px,290px);
+    }
+    .circleimg .im6{
+        transform: translate(90px,180px);
+        height: 3em;
+        width: 3em;
+    }
+}
+@media all and (max-width:322px) {
+    .contact img{
+        height: 3em;
+        width: 3em;
+    }
+    .circleimg .center{
+        height: 5em;
+        padding: 5px;
+        width: 5em;
+        transform: translate(-70px,200px);
+    }
+    .circleimg .im1{
+        height: 3em;
+        transform: translate(20px, 100px);
+    }
+    .circleimg .im2{
+        transform: translate(70px,0px);
+    }
+    .circleimg .im3{
+        font-size: 1.4em;
+        transform: translate(120px,110px);
+    }
+    .circleimg .im4{
+        width: 3em;
+        height: 3em;
+        transform: translate(-40px,190px);
+    }
+    .circleimg .im5{
+        transform: translate(10px,290px);
+        width: 3.5em;
+        height: 3.5em;
+    }
+    .circleimg .im6{
+        transform: translate(70px,170px);
+        height: 3em;
+        width: 3em;
+    }
+}
